@@ -49,13 +49,12 @@ const state = {
       });
     },
     saveItems (context, payload) {
-      console.log('Before saveItems');
   
       return new Promise((resolve, reject) => {
         const items = payload;
-        apiClient.saveItems(payload).then((response) => {
+        apiClient.saveItems(payload).then((response) =>{
           context.commit('UPDATE_ITEMS', items);
-          context.commit('CLEAR_FIELDS');
+          context.commit('CLEAR_FIELDS'); 
           resolve(response);
         }, (error) => {
           reject(error);

@@ -1,20 +1,24 @@
-
 <template>
   <div>
-    <h2>Form Handling from Vue</h2>
-    <InputForm></InputForm>
+    <!-- Use your custom router-link component instead of the default router-link -->
+    <router-link to="/">Home</router-link>
+    <router-link to="/dunkirk">Dunkirk</router-link>
+
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import InputForm from './components/InputForm.vue'
+import RouterLink from './components/RouterLink.vue';
+import View from './components/View.vue';
 
 export default {
   name: 'App',
   components: {
-    InputForm
-  }
-}
+    'router-link': RouterLink,
+    'router-view': View,
+  },
+};
 </script>
 
 <style scoped>

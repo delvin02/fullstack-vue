@@ -41,14 +41,11 @@
             <button v-if="saveStatus === 'SAVING'" disabled class="ui button">
                 Saving...
             </button>
-            <button v-if="saveStatus === 'SUCCESS'" :disabled="isNewItemInputLimitExceeded || isNotUrgent"
-                class="ui button">
-                Saved! Submit another
-            </button>
             <button v-if="saveStatus === 'ERROR'" :disabled="isNewItemInputLimitExceeded || isNotUrgent" class="ui button">
                 Save Failed - Retry?
             </button>
-            <button v-if="saveStatus === 'READY'" :disabled="isNewItemInputLimitExceeded || isNotUrgent" class="ui button">
+            <button v-if="saveStatus === 'READY' || saveStatus == 'SUCCESS'"
+                :disabled="isNewItemInputLimitExceeded || isNotUrgent" class="ui button">
                 Submit
             </button>
         </form>
@@ -115,6 +112,13 @@ export default {
 
             this.fieldErrors = this.validateForm(this.$store.state.formModule.fields);
             if (Object.keys(this.fieldErrors).length) return;
+
+            const newItemValue = this.$store.state.formModule.fields.newItem;
+
+            if (this.$store.state.formModule.items.includes(newItemValue)) {
+                this.fieldErrors.newItem = 'Item already exists';
+                return;
+            }
 
             const items = [
                 ...this.$store.state.formModule.items,
