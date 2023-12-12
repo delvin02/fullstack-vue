@@ -1,5 +1,5 @@
 <template>
-    <div class="input-form">
+    <div class="input-form w-1/4">
         <form @submit="submitForm" class="ui form">
             <div class="field">
                 <label>New Item</label>
@@ -44,12 +44,12 @@
             <button v-if="saveStatus === 'ERROR'" :disabled="isNewItemInputLimitExceeded || isNotUrgent" class="ui button">
                 Save Failed - Retry?
             </button>
-            <button v-if="saveStatus === 'READY' || saveStatus == 'SUCCESS'"
-                :disabled="isNewItemInputLimitExceeded || isNotUrgent" class="ui button">
+            <button v-if="saveStatus === 'READY' || saveStatus === 'SUCCESS'"
+                :disabled="isNewItemInputLimitExceeded || (isNotUrgent || !termsAndConditions)" class="ui button">
                 Submit
             </button>
         </form>
-        <div class="ui segment">
+        <div class="ui segment text-center">
             <h4 class="ui header">Items</h4>
             <ul>
                 <div v-if="loading" class="ui active inline loader"></div>

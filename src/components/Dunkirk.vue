@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h2>Dunkirk</h2>
+    <div class="w-1/4">
+        <h2 class="font-bold text-2xl">Dunkirk</h2>
         <p class="movies__description">Miraculous evacuation of Allied soldiers from
             Belgium, Britain, Canada, and France, who were cut off and surrounded by
             the German army from the beaches and harbor of Dunkirk, France, during the

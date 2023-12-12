@@ -1,39 +1,33 @@
 <template>
-  <div>
+  <div class="flex flex-col justify-between h-screen">
     <!-- Use your custom router-link component instead of the default router-link -->
-    <router-link to="/">Home</router-link>
-    <router-link to="/dunkirk">Dunkirk</router-link>
+    <div class="flex justify-center gap-3 font-mono font-bold text-lg">
+      <router-link to="/" class="bg-slate-100 p-2 mt-3 rounded hover:shadow-sm hover:bg-slate-300">Home</router-link>
+      <router-link to="/form" class="bg-slate-100 p-2 mt-3 rounded hover:shadow-sm hover:bg-slate-300">Form</router-link>
+      <router-link to="/dunkirk"
+        class="bg-slate-100 p-2 mt-3 rounded hover:shadow-sm hover:bg-slate-300">Dunkrik</router-link>
+    </div>
 
-    <router-view></router-view>
+    <router-view class="mx-auto"></router-view>
+    <div>
+      <p class="bg-violet-300 p-2 text-center"> Supercharged with <span class="text-[#194D33]">VueJS</span>, Tailwind and
+        Vite. </p>
+
+    </div>
   </div>
 </template>
 
 <script>
-import RouterLink from './components/RouterLink.vue';
-import View from './components/View.vue';
+// import RouterLink from './components/RouterLink.vue';
+// import View from './components/View.vue';
 
 export default {
   name: 'App',
-  components: {
-    'router-link': RouterLink,
-    'router-view': View,
-  },
+  // components: {
+  //   'router-link': RouterLink,
+  //   'router-view': View,
+  // },
 };
 </script>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
