@@ -1,11 +1,20 @@
 <template>
     <div>
-        <h1 class="text-center font-bold text-6xl uppercase">Welcome to my test page.</h1>
+        <div>
+            <FeatureProcess />
+        </div>
+
     </div>
 </template>
 
 <script>
+import FeatureProcess from "./FeatureProcess.vue"
+
+
 export default {
-    name: "Home"
-}
+    name: "Home",
+    components: {
+        FeatureProcess
+    }
+};
 </script>

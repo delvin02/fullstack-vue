@@ -1,5 +1,5 @@
 <template>
-    <div class="input-form w-1/4">
+    <div class="input-form w-1/4 mx-auto">
         <form @submit="submitForm" class="ui form">
             <div class="field">
                 <label>New Item</label>

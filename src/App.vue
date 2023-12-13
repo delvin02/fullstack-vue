@@ -6,9 +6,12 @@
       <router-link to="/form" class="bg-slate-100 p-2 mt-3 rounded hover:shadow-sm hover:bg-slate-300">Form</router-link>
       <router-link to="/dunkirk"
         class="bg-slate-100 p-2 mt-3 rounded hover:shadow-sm hover:bg-slate-300">Dunkrik</router-link>
+      <router-link to="/FeatureProcessV2"
+        class="bg-slate-100 p-2 mt-3 rounded hover:shadow-sm hover:bg-slate-300">Form</router-link>
+
     </div>
 
-    <router-view class="mx-auto"></router-view>
+    <router-view></router-view>
     <div>
       <p class="bg-violet-300 p-2 text-center"> Supercharged with <span class="text-[#194D33]">VueJS</span>, Tailwind and
         Vite. </p>

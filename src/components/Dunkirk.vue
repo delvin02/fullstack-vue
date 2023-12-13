@@ -1,5 +1,5 @@
 <template>
-    <div class="w-1/4">
+    <div class="w-1/4 mx-auto">
         <h2 class="font-bold text-2xl">Dunkirk</h2>
         <p class="movies__description">Miraculous evacuation of Allied soldiers from
             Belgium, Britain, Canada, and France, who were cut off and surrounded by

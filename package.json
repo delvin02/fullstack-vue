@@ -9,7 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flowbite": "^2.2.0",
+    "flowbite-vue": "^0.1.1",
+    "gsap": "^3.12.3",
     "mitt": "^3.0.1",
+    "scrolltrigger-classes": "^0.3.6",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5",
     "vuex": "^4.1.0"
