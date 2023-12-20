@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/colors": "^3.0.0",
+    "express": "^4.18.2",
     "flowbite": "^2.2.0",
     "flowbite-vue": "^0.1.1",
     "gsap": "^3.12.3",

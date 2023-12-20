@@ -1,14 +1,14 @@
 <template>
     <div class="slide-container flex">
         <div class="w-1/2 h-[300vh] bg-yellow-400 ">
-            <p class="sticky top-[50%] right-[50%] text-center text-5xl font-bold">Features provided by<br> OneCore Technologies.</p>
+            <p class="sticky top-[50%] right-[50%] text-center text-5xl font-bold">Features provided by<br> OneCore
+                Technologies.</p>
         </div>
         <div class="w-full">
             <div class="w-full h-screen bg-gray-200">
                 <div class="flex flex-col gap-3 min-h-full bg-gray-200 border-b-4 border-yellow-400">
                     <div class="my-auto p-10">
                         <h1 class="text-black text-5xl font-bold anim">Syncing Financial Data, Seamlessly.</h1>
-
                         <div class="flex gap-3 anim mt-10">
                             <p class="text-black text-sm">Lorem ipsum dolor sit amet consectetur. Egestas euismod
                                 nec
@@ -108,10 +108,10 @@ export default {
 </script>
 
 <style scoped>
-.slide-container::before, .slide-container::after {
+.slide-container::before,
+.slide-container::after {
     content: '';
     display: table;
     clear: both;
 }
-
 </style>

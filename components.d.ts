@@ -19,6 +19,7 @@ declare module 'vue' {
     NavigationMenuList: typeof import('radix-vue')['NavigationMenuList']
     NavigationMenuListItem: typeof import('./src/components/NavigationMenuListItem.vue')['default']
     NavigationMenuRoot: typeof import('radix-vue')['NavigationMenuRoot']
+    NavigationMenuSub: typeof import('radix-vue')['NavigationMenuSub']
     NavigationMenuViewport: typeof import('radix-vue')['NavigationMenuViewport']
     NotFound: typeof import('./src/components/NotFound.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
