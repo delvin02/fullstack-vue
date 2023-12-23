@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/colors": "^3.0.0",
+    "axios": "^1.6.2",
     "express": "^4.18.2",
     "flowbite": "^2.2.0",
     "flowbite-vue": "^0.1.1",
@@ -18,8 +19,10 @@
     "mitt": "^3.0.1",
     "radix-vue": "^1.2.4",
     "scrolltrigger-classes": "^0.3.6",
-    "vue": "^3.3.8",
+    "vue": "3.2",
+    "vue-marquee-slider": "^1.0.6",
     "vue-router": "^4.2.5",
+    "vue3-marquee": "^4.1.0",
     "vuex": "^4.1.0"
   },
   "devDependencies": {

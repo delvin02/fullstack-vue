@@ -4,6 +4,9 @@ import App from './App.vue';
 import store from './store';
 import router from './router';
 import mitt from 'mitt';
+import Vue3Marquee from 'vue3-marquee'
+
+
 const emitter = mitt();
 
 window.addEventListener('popstate', () => {
@@ -15,4 +18,5 @@ app.config.globalProperties.emitter = emitter
 
 app.use(store)
   .use(router)
+  .use(Vue3Marquee)
   .mount('#app');

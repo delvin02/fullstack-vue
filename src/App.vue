@@ -5,22 +5,24 @@
     </div>
 
     <router-view></router-view>
-    <div>
+    <!-- <div>
       <p class="bg-violet-300 p-2 text-center"> Supercharged with <span class="text-[#194D33]">VueJS</span>, Tailwind and
         Vite. </p>
 
-    </div>
+    </div> -->
+    <Footer />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
-
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     NavBar,
+    Footer
   },
 };
 </script>

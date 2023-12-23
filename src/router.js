@@ -4,6 +4,7 @@ import InputForm from './components/InputForm.vue';
 import Dunkirk from './components/Dunkirk.vue';
 import NotFound from './components/NotFound.vue';
 import FeatureProcessV2 from './components/FeatureProcess2.vue';
+import Demo from './components/Demo.vue';
 
 const routes = [
     {
@@ -27,9 +28,14 @@ const routes = [
       name: 'FeatureProcessV2'
     },
     {
+      path: '/demo',
+      component: Demo,
+      name: "Demo"
+    },
+    {
         path: '/:pathMatch(.*)*',
         component: NotFound
-    }
+    },
 ];
   
   const router = createRouter({

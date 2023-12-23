@@ -24,7 +24,7 @@ const currentTrigger = ref('')
                 <div class="nav-menu flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 "
                     :class="{ 'block': state, 'hidden': !state }">
 
-                    <ul class="items-center  space-y-6 md:flex md:space-x-6 md:space-y-0">
+                    <ul class="items-center justify-center space-y-6 md:flex md:space-x-6 md:space-y-0">
                         <li>
                             <router-link to="/"
                                 class="w-full flex items-center justify-between gap-1 text-gray-700 hover:text-indigo-600">Home</router-link>

@@ -7,9 +7,13 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Cards: typeof import('./src/components/Cards.vue')['default']
+    Demo: typeof import('./src/components/Demo.vue')['default']
     Dunkirk: typeof import('./src/components/Dunkirk.vue')['default']
     FeatureProcess: typeof import('./src/components/FeatureProcess.vue')['default']
     FeatureProcess2: typeof import('./src/components/FeatureProcess2.vue')['default']
+    Footer: typeof import('./src/components/Footer.vue')['default']
+    FormItem: typeof import('./src/components/FormItem.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Home: typeof import('./src/components/Home.vue')['default']
     InputForm: typeof import('./src/components/InputForm.vue')['default']
@@ -25,5 +29,6 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ScrollableCard: typeof import('./src/components/ScrollableCard.vue')['default']
+    Start: typeof import('./src/components/Start.vue')['default']
   }
 }

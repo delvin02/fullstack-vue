@@ -33,7 +33,7 @@ import { FwbBadge } from 'flowbite-vue'
 
 
                     <div>
-                        <div class='absolute blur-[118px] h-[50vw] ml-auto w-full'
+                        <div class='absolute blur-[118px] h-full ml-auto w-full'
                             :style="{ background: this.backgroundGradient, transition: 'background 0.5s ease' }">
                         </div>
                         <section class="flex flex-col p-10 w-[50vw] h-full justify-center">
@@ -111,17 +111,23 @@ import { FwbBadge } from 'flowbite-vue'
             </div>
         </div>
 
-        <section class="h-screen"></section>
+        <section class="h-screen">
+
+            <Cards />
+        </section>
     </div>
 </template>
 
 <script>
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import Cards from './Cards.vue';
 
 export default {
     name: "FeatureProcess",
+    components: {
+        Cards
+    },
     data() {
         return {
             // backgroundGradient: 'linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)',

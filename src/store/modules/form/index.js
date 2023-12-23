@@ -72,7 +72,10 @@ const state = {
     urgency: state => state.fields.urgency,
     isNotUrgent: state => state.fields.urgency === 'Nonessential',
     termsAndConditions: state => state.fields.termsAndConditions,
-    items: state => state.items
+    items: state => state.itemsm,
+    getItemFromId: (state) => (id) => {
+      return state.items.find(item => item.id === id)
+    }
   }
   
   const formModule ={
